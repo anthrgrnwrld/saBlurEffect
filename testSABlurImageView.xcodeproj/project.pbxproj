@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36373D5B1BFF356700EC6BA0 /* saBlurEffect.gif in Resources */ = {isa = PBXBuildFile; fileRef = 36373D5A1BFF356700EC6BA0 /* saBlurEffect.gif */; };
 		36AA48391BE4395100E1A955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AA48381BE4395100E1A955 /* AppDelegate.swift */; };
 		36AA483B1BE4395100E1A955 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AA483A1BE4395100E1A955 /* ViewController.swift */; };
 		36AA483E1BE4395100E1A955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36AA483C1BE4395100E1A955 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		36AA48431BE4395100E1A955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36AA48411BE4395100E1A955 /* LaunchScreen.storyboard */; };
 		36AA484E1BE4395100E1A955 /* testSABlurImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AA484D1BE4395100E1A955 /* testSABlurImageViewTests.swift */; };
 		36AA48591BE4395100E1A955 /* testSABlurImageViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AA48581BE4395100E1A955 /* testSABlurImageViewUITests.swift */; };
+		36AA48691BE5926100E1A955 /* SABlurImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AA48671BE5926100E1A955 /* SABlurImageView.swift */; };
+		36AA486A1BE5926100E1A955 /* UIImage+BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AA48681BE5926100E1A955 /* UIImage+BlurEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36373D5A1BFF356700EC6BA0 /* saBlurEffect.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = saBlurEffect.gif; sourceTree = "<group>"; };
 		36AA48351BE4395100E1A955 /* testSABlurImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSABlurImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36AA48381BE4395100E1A955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36AA483A1BE4395100E1A955 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		36AA48541BE4395100E1A955 /* testSABlurImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testSABlurImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36AA48581BE4395100E1A955 /* testSABlurImageViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testSABlurImageViewUITests.swift; sourceTree = "<group>"; };
 		36AA485A1BE4395100E1A955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36AA48671BE5926100E1A955 /* SABlurImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SABlurImageView.swift; sourceTree = "<group>"; };
+		36AA48681BE5926100E1A955 /* UIImage+BlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+BlurEffect.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		36AA482C1BE4395100E1A955 = {
 			isa = PBXGroup;
 			children = (
+				36AA48661BE5926100E1A955 /* SABlurImageView */,
 				36AA48371BE4395100E1A955 /* testSABlurImageView */,
 				36AA484C1BE4395100E1A955 /* testSABlurImageViewTests */,
 				36AA48571BE4395100E1A955 /* testSABlurImageViewUITests */,
@@ -103,6 +110,7 @@
 				36AA483F1BE4395100E1A955 /* Assets.xcassets */,
 				36AA48411BE4395100E1A955 /* LaunchScreen.storyboard */,
 				36AA48441BE4395100E1A955 /* Info.plist */,
+				36373D5A1BFF356700EC6BA0 /* saBlurEffect.gif */,
 			);
 			path = testSABlurImageView;
 			sourceTree = "<group>";
@@ -123,6 +131,15 @@
 				36AA485A1BE4395100E1A955 /* Info.plist */,
 			);
 			path = testSABlurImageViewUITests;
+			sourceTree = "<group>";
+		};
+		36AA48661BE5926100E1A955 /* SABlurImageView */ = {
+			isa = PBXGroup;
+			children = (
+				36AA48671BE5926100E1A955 /* SABlurImageView.swift */,
+				36AA48681BE5926100E1A955 /* UIImage+BlurEffect.swift */,
+			);
+			path = SABlurImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +247,7 @@
 			files = (
 				36AA48431BE4395100E1A955 /* LaunchScreen.storyboard in Resources */,
 				36AA48401BE4395100E1A955 /* Assets.xcassets in Resources */,
+				36373D5B1BFF356700EC6BA0 /* saBlurEffect.gif in Resources */,
 				36AA483E1BE4395100E1A955 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36AA48691BE5926100E1A955 /* SABlurImageView.swift in Sources */,
+				36AA486A1BE5926100E1A955 /* UIImage+BlurEffect.swift in Sources */,
 				36AA483B1BE4395100E1A955 /* ViewController.swift in Sources */,
 				36AA48391BE4395100E1A955 /* AppDelegate.swift in Sources */,
 			);
@@ -481,6 +501,7 @@
 				36AA485F1BE4395100E1A955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36AA48601BE4395100E1A955 /* Build configuration list for PBXNativeTarget "testSABlurImageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +510,7 @@
 				36AA48621BE4395100E1A955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36AA48631BE4395100E1A955 /* Build configuration list for PBXNativeTarget "testSABlurImageViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +519,7 @@
 				36AA48651BE4395100E1A955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
